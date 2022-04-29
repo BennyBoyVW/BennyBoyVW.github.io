@@ -440,10 +440,15 @@ label {
 
 @media screen and (max-width: 500px) {
     .bio {
-        grid-template-rows: 1fr 1fr 8fr;
+        grid-template-rows: 1fr 1fr 4fr;
     }
 
     .profile {
-        margin-top: -8vw;
+        margin-top: -80px;
+    }
+
+    .profile img {
+        min-height: 50vw;
+        min-width: 50vw;
     }
 }
