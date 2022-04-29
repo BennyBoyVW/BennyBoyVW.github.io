@@ -437,3 +437,13 @@ label {
         width: 75vw;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .bio {
+        grid-template-rows: 1fr 1fr 8fr;
+    }
+
+    .profile {
+        margin-top: -8vw;
+    }
+}
