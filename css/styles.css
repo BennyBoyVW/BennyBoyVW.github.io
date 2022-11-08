@@ -1,0 +1,749 @@
+body {
+    margin: 0;
+    background-color: #424656;
+    max-width: 100vw;
+}
+
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/homepage.png);
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+.homeLogo {
+    width: 50vw;
+}
+
+.homeButtonGrid {
+    width: 60vw;
+    display: flex;
+    gap: 3vw 6.25vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homeButton {
+    width: 12.5vw;
+    height: 4vw;
+    border: 3px solid;
+    color: #75ABC7;
+    border-radius: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75vw;
+    transition: color .5s;
+}
+
+.homeButton:hover {
+    color: #b9d5e3;
+}
+
+.homeButton:focus {
+    opacity: 50%;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B253E;
+}
+
+.navLogo {
+    width: 25vw;
+}
+
+.navMenu {
+    height: 4vw;
+    width: 4vw;
+    padding-right: 1vw;
+    color: #75ABC7
+}
+
+.aboutSection {
+    display: grid;
+    width: 100vw;
+    height: 75vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 7fr 4fr;
+}
+
+.aboutText {
+    color: #ccc;
+    padding-left: 25px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+h1 {
+    font-family: 'Maitree', serif;
+}
+
+h2 {
+    font-family: 'Maitree', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#oldLogoContainer {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#oldLogo {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../img/old_logo.png);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.historySection {
+    display: flex;
+    padding: 2vw;
+}
+
+#historyText {
+    width: 100%;
+}
+
+.blueHeatPicSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vw;
+    padding-bottom: 3vw;
+}
+
+#teamPicContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+    font-size: .8rem;
+}
+
+.blankDivHeat {
+    width: 10%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1vw;
+    color: #ccc;
+    font-size: .8rem;
+}
+
+
+#teamPic {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../img/team_picture.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.blueHeatPic {
+    background-image: url(../img/blue_and_heat.jpg);
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.aboutLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.programHighlights {
+    display: flex;
+    flex-direction: row;
+}
+
+#jackAaronContainer {
+    color: #ccc;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 40vw;
+    padding: 3vw;
+}
+
+#jackAaron {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/jack_and_aaron.jpeg);
+    background-size: cover;
+    border-radius: 1vw;
+}
+
+.playerHighlights {
+    display: flex;
+    padding: 2vw;
+}
+
+#playerHighlightPicContainer {
+    color: #ccc;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 120vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#playerHighlightPic1 {
+    width: 100%;
+    height: 45%;
+    background-image: url(../img/player_highlights_1.jpg);
+    background-size: cover;
+    margin-bottom: -.5vw;
+    border-radius: 1vw;
+}
+
+#playerHighlightPic2 {
+    width: 100%;
+    height: 45%;
+    background-image: url(../img/player_highlights_2.jpg);
+    background-size: cover;
+    margin-bottom: -.5vw;
+    border-radius: 1vw;
+}
+
+#presidents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+table, th, td {
+    border:.05rem solid #ccc;
+}
+
+#photoMain {
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#photoGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.photoGridRow {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1vw;
+}
+
+#photo1 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/cj_shot\ \(2\).JPG);
+    background-size: cover;
+}
+
+#photo2 {
+    height: 20vw;
+    width: 35vw;
+    background-image: url(../img/photo_page/aaron_throw\ \(2\).jpg);
+    background-size: cover;
+}
+
+#photo3 {
+    height: 20vw;
+    width: 25vw;
+    background-image: url(../img/photo_page/aaron_r_throw.jpg);
+    background-size: cover;
+}
+
+#photo4 {
+    height: 20vw;
+    width: 25vw;
+    background-image: url(../img/photo_page/connor_pass.jpg);
+    background-size: cover;
+}
+
+#photo5 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/cj_shot.jpg);
+    background-size: cover;
+}
+
+#photo6 {
+    height: 20vw;
+    width: 35vw;
+    background-image: url(../img/photo_page/aaron_throw.jpg);
+    background-size: cover;
+}
+
+#photo7 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/defense2.jpg);
+    background-size: cover;
+}
+
+#photo8 {
+    height: 20vw;
+    width: 27.5vw;
+    background-image: url(../img/photo_page/defense1.jpg);
+    background-size: cover;
+}
+
+#photo9 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/defense3.jpg);
+    background-size: cover;
+}
+
+#photo10 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/defense4.jpg);
+    background-size: cover;
+}
+
+#photo11 {
+    height: 20vw;
+    width: 27.5vw;
+    background-image: url(../img/photo_page/defense5.jpg);
+    background-size: cover;
+}
+
+#photo12 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/holden_shot.jpg);
+    background-size: cover;
+}
+
+#photo13 {
+    height: 20vw;
+    width: 25vw;
+    background-image: url(../img/photo_page/joe_shot.jpg);
+    background-size: cover;
+}
+
+#photo14 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/jordan_shot.jpg);
+    background-size: cover;
+}
+
+#photo15 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/malachi_shot.jpg);
+    background-size: cover;
+}
+
+#photo16 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/sacha_shot.jpg);
+    background-size: cover;
+}
+
+#photo17 {
+    height: 20vw;
+    width: 27.5vw;
+    background-image: url(../img/photo_page/roberto.jpg);
+    background-size: cover;
+}
+
+#photo18 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/tommy.jpg);
+    background-size: cover;
+}
+
+#photo19 {
+    height: 20vw;
+    width: 35vw;
+    background-image: url(../img/photo_page/tommy_throw.jpg);
+    background-size: cover;
+}
+
+#photo20 {
+    height: 20vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/uva.JPG);
+    background-size: cover;
+}
+
+#photo21 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/tommy_shot.jpg);
+    background-size: cover;
+}
+
+#photo22 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/holden_thumb.jpg);
+    background-size: cover;
+}
+
+#photo23 {
+    height: 20vw;
+    width: 27.5vw;
+    background-image: url(../img/photo_page/cj_laugh.JPG);
+    background-size: cover;
+}
+
+#photo24 {
+    height: 20vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/aaron_mvp.JPG);
+    background-size: cover;
+}
+
+#photo25 {
+    height: 30vw;
+    width: 20vw;
+    background-image: url(../img/photo_page/aaron_alex.jpeg);
+    background-size: cover;
+}
+
+#photo26 {
+    height: 30vw;
+    width: 30vw;
+    background-image: url(../img/photo_page/tats.JPG);
+    background-size: cover;
+}
+
+#photo27 {
+    height: 30vw;
+    width: 20vw;
+    background-image: url(../img/photo_page/aaron_cj.jpeg);
+    background-size: cover;
+}
+
+#photo28 {
+    height: 30vw;
+    width: 20vw;
+    background-image: url(../img/photo_page/jordan_alex.jpeg);
+    background-size: cover;
+}
+
+#photo29 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/jack_ross.jpeg);
+    background-size: cover;
+}
+
+#photo30 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/aaron_jordan.JPG);
+    background-size: cover;
+}
+
+#photo31 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/jack_alex.jpeg);
+    background-size: cover;
+}
+
+#photo32 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/jack_and_aaron.jpeg);
+    background-size: cover;
+}
+
+#photo33 {
+    height: 30vw;
+    width: 25vw;
+    background-image: url(../img/photo_page/crew.jpeg);
+    background-size: cover;
+}
+
+#photo34 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/aaron_ross_cj.jpeg);
+    background-size: cover;
+}
+
+#photo35 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/cj_alex_tj.jpeg);
+    background-size: cover;
+}
+
+#photo36 {
+    height: 30vw;
+    width: 20vw;
+    background-image: url(../img/photo_page/aaron_ross_jordan.JPG);
+    background-size: cover;
+}
+
+#photo37 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/alex_and_ross.JPG);
+    background-size: cover;
+}
+
+#photo38 {
+    height: 30vw;
+    width: 22.5vw;
+    background-image: url(../img/photo_page/alex_cj.jpeg);
+    background-size: cover;
+}
+
+#photo39 {
+    height: 30vw;
+    width: 45vw;
+    background-image: url(../img/photo_page/nationals3.JPG);
+    background-size: cover;
+}
+
+#photo40 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/nationals1.JPG);
+    background-size: cover;
+}
+
+#photo41 {
+    height: 20vw;
+    width: 25vw;
+    background-image: url(../img/photo_page/nationals2.JPG);
+    background-size: cover;
+}
+
+#photo42 {
+    height: 20vw;
+    width: 32.5vw;
+    background-image: url(../img/photo_page/nationals4.JPG);
+    background-size: cover;
+}
+
+#photo43 {
+    height: 20vw;
+    width: 45vw;
+    background-image: url(../img/photo_page/carolina_tar.jpeg);
+    background-size: cover;
+}
+
+#photo44 {
+    height: 20vw;
+    width: 45vw;
+    background-image: url(../img/photo_page/team.jpeg);
+    background-size: cover;
+}
+
+#photo45 {
+    height: 20vw;
+    width: 45vw;
+    background-image: url(../img/photo_page/carolina_nyac.jpeg);
+    background-size: cover;
+}
+
+#photo46 {
+    height: 20vw;
+    width: 45vw;
+    background-image: url(../img/photo_page/carolinas.jpg);
+    background-size: cover;
+}
+
+#lastPhotoRow {
+    padding-bottom: 1vw;
+}
+
+#playersMain {
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.cardRow {
+    width: 95vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.card {
+    height: 100%;
+    width: 25%;
+    background-color: #a7aabd;
+    border-radius: .75vw;
+    color: #071330;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Maitree', serif;
+}
+
+.cardPhoto {
+    height: 40%;
+    width: 80%;
+    background-size: cover;
+}
+
+#aaronPhoto {
+    background-image: url(../img/card_photos/aaron.jfif);
+}
+
+#alexPhoto {
+    background-image: url(../img/card_photos/alex.jfif);
+    width: 50%;
+}
+
+#tommyPhoto {
+    background-image: url(../img/photo_page/tommy_shot.jpg);
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 30%;
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#holdenPhoto {
+    background-image: url(../img/card_photos/holden.jfif)
+}
+
+#malachiPhoto {
+    background-image: url(../img/card_photos/malachi.jfif)
+}
+
+#calPhoto {
+    background-image: url(../img/card_photos/cal.jfif)
+}
+
+#connorPhoto {
+    background-image: url(../img/card_photos/connor.jfif);
+    width:50%;
+}
+
+#alhagiPhoto {
+    background-image: url(../img/card_photos/alhagi.jfif);
+    width: 50%;
+}
+
+#robertoPhoto {
+    background-image: url(../img/card_photos/roberto.jfif);
+}
+
+#benPhoto {
+    background-image: url(../img/card_photos/ben.jfif);
+    width: 50%
+}
+
+#troyePhoto {
+    background-image: url(../img/card_photos/troye.jfif);
+    width: 45%
+}
+
+#irfaunPhoto {
+    background-image: url(../img/card_photos/irf.jfif);
+    width: 50%
+}
+
+.contactMain {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
+    padding-top: 3vw;
+    color: #ccc;
+    justify-content: space-between;
+    height: 20vw;
+}
+
+.contactMain p a {
+    color: #a7aabd;
+}
+
+.contactImage {
+    height: 32vw;
+    width: 30vw;
+    background-image: url(../img/alex_cj.jpeg);
+    background-size: cover;
+    margin-right: 10vw;
+    border-radius: 5%;
+}
+
+.scheduleMain {
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scheduleBody {
+    width: 90vw;
+    height: 31.5vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.thiPromo {
+    height: 100%;
+    width: 35.5%;
+    background-image: url(../img/thi.jpg);
+    background-size: cover;
+}
