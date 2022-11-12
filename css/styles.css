@@ -75,9 +75,10 @@ nav {
 .aboutSection {
     display: grid;
     width: 100vw;
-    height: 75vh;
+    height: auto !important;
     grid-template-rows: 1fr;
     grid-template-columns: 7fr 4fr;
+    padding-bottom: 1vw;
 }
 
 .aboutText {
@@ -706,16 +707,25 @@ h3 {
     display: flex;
     flex-direction: row;
     padding-left: 5vw;
-    padding-right: 5vw;
     padding-bottom: 5vw;
     padding-top: 3vw;
     color: #ccc;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 20vw;
+    gap: 2vw;
 }
 
-.contactMain p a {
+.contactMain a {
     color: #a7aabd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contactImageContainer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactImage {
@@ -746,4 +756,140 @@ h3 {
     width: 35.5%;
     background-image: url(../img/thi.jpg);
     background-size: cover;
+}
+
+.contactText {
+    max-width: 50%;
+    margin-right: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+    .homeLogo {
+        width: 70vw;
+    }
+    .homeButtonGrid {
+        width: 80vw;
+    }
+    .homeButton {
+        width: 15vw;
+        height: 5vw;
+    }
+    .navLogo {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .homeLogo {
+        width: 100vw;
+        padding-bottom: 4vw;
+    }
+    .homeButtonGrid {
+        width: 90vw;
+    }
+    .homeButton {
+        width: 80vw;
+        height: 15vw;
+        font-size: 1.5rem;
+        border-radius: 7.5vw;
+        margin: 1vw;
+    }
+    .navLogo {
+        width: 60vw;
+    }
+    #oldLogoContainer {
+        max-width: 0;
+    }
+    .aboutText {
+        width: 90vw;
+    }
+    .contactMain {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10vw;
+    }
+    .contactText {
+        max-width: 100%;
+    }
+    .contactImage {
+        height: 40vw;
+        width: 40vw;
+    }
+    .contactImageContainer {
+        max-height: 0vh;
+    }
+    .blueHeatPicSection {
+        flex-direction: column;
+        height: 60vw;
+        padding-bottom: 0vw;
+    }
+    .blueHeatPic {
+        width: 80vw;
+        height: 150vw;
+    }
+    #blankDivHeat1 {
+        display: none;
+    }
+    .blankDivHeat {
+        width: 80vw;
+    }
+    .historySection {
+        flex-direction: column-reverse;
+        max-width: 85vw;
+    }
+    #teamPicContainer {
+        padding-left: 7.5vw;
+        flex-direction: row;
+    }
+    #teamPicContainer p {
+        padding-left: 2vw;
+        width: 30%;
+        font-size: .6rem;
+    }
+    #teamPic {
+        width: 50vw;
+        height: 50vw;
+    }
+    #jackAaronContainer {
+        width: 0;
+    }
+    #jackAaronContainer p {
+        display: none;
+    }
+    #playerHighlightPicContainer {
+        display: none;
+    }
+    #playerHighlightPicContainer p {
+        display: none;
+    }
+    table {
+        min-width: 65vw;
+    }
+    .playerHighlights {
+        padding: 0vw;
+    }
+    .contactMain {
+        margin-top: -4vw;
+        padding-top: 0vw;
+    }
+    .card {
+        width: auto;
+    }
+    #cardGrid {
+        height: auto;
+    }
+    .cardRow {
+        height: auto;
+    }
+    #playersMain {
+        height: auto;
+    }
+    .scheduleBody {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thiPromo {
+        min-height: 80vw;
+        min-width: 80vw;
+    }
 }
