@@ -159,6 +159,13 @@ p {
     background-size: cover;
     border-radius: 5%;
 }
+#oldTeamPic {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../img/CTHC_1991_1992.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
 
 .blueHeatPic {
     background-image: url(../img/blue_and_heat.jpg);
