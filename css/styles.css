@@ -159,10 +159,11 @@ p {
     background-size: cover;
     border-radius: 5%;
 }
+
 #oldTeamPic {
-    width: 30vw;
-    height: 30vw;
-    background-image: url(../img/CTHC_1991_1992.jpg);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cthc_1991_1992.jpg);
     background-size: cover;
     border-radius: 5%;
 }
