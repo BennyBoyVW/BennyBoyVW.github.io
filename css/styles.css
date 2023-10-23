@@ -165,6 +165,7 @@ p {
     height: 150%;
     background-image: url(../img/cthc_1991_1992.jpg);
     background-size: cover;
+    display: flex;
     border-radius: 5%;
 }
 
