@@ -761,8 +761,8 @@ h3 {
 }
 
 .thiPromo {
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 60vw;
     background-image: url(../img/thiGraphic.jpeg);
     background-size: cover;
 }
@@ -902,7 +902,7 @@ h3 {
         align-items: center;
     }
     .thiPromo {
-        min-height: 50vw;
-        min-width: 50vw;
+        min-height: 40vw;
+        min-width: 60vw;
     }
 }
