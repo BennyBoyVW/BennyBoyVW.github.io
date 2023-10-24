@@ -161,8 +161,8 @@ p {
 }
 
 #oldTeamPic {
-    width: 150%;
-    height: 150%;
+    width: 30vw;
+    height: 30vw;
     background-image: url(../img/cthc_1991_1992.jpg);
     background-size: cover;
     display: flex;
@@ -763,7 +763,7 @@ h3 {
 .thiPromo {
     height: 100%;
     width: 35.5%;
-    background-image: url(../img/thi.jpg);
+    background-image: url(../img/thiGraphic.jpeg);
     background-size: cover;
 }
 
@@ -859,6 +859,10 @@ h3 {
         width: 50vw;
         height: 50vw;
     }
+    #oldTeamPic {
+            width: 50vw;
+            height: 50vw;
+        }
     #jackAaronContainer {
         width: 0;
     }
