@@ -762,7 +762,7 @@ h3 {
 
 .thiPromo {
     height: 50vw;
-    width: 65vw;
+    width: 60vw;
     background-image: url(../img/thiGraphic.jpeg);
     background-size: cover;
 }
@@ -903,6 +903,6 @@ h3 {
     }
     .thiPromo {
         min-height: 50vw;
-        min-width: 65vw;
+        min-width: 60vw;
     }
 }
