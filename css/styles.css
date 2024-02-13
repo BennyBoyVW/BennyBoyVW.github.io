@@ -761,7 +761,8 @@ h3 {
 }
 
 .thiPromo {
-    width: 50vw;
+    height: auto;
+    width: 40%;
     background-image: url(../img/BlueCupSchedule.png);
     background-size: cover;
 }
