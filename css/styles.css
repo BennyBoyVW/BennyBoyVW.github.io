@@ -170,7 +170,7 @@ p {
 }
 
 .blueHeatPic {
-    background-image: url(../img/blue_and_heat.jpg);
+    background-image: url(../img/2024_team.jpg);
     height: 100%;
     width: 60%;
     background-size: cover;
@@ -905,4 +905,39 @@ h3 {
         min-height: 30vw;
         min-width: 45vw;
     }
+
+    /* Styles for the section that contains the 2024 team image */
+    .team2024PicSection {
+        display: flex;
+        align-items: flex-start; /* Align items to the top */
+        justify-content: center; /* Center the content within the section */
+        flex-direction: column; /* Stack image and text vertically */
+        width: 80%; /* Full container width */
+        max-width: 900px; /* Limit the maximum width of the container */
+        height: auto; /* Adjust height based on content */
+        padding-bottom: 3vw; /* Add padding at the bottom */
+        margin: 0 auto; /* Center the container horizontally */
+        gap: 1rem; /* Space between image and caption */
+    }
+    
+    /* Styles for the image */
+    .team2024Pic {
+        width: 60%; /* Set image to take up the entire container width */
+        max-width: 600px; /* Limit the maximum width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Ensure image respects border radius */
+        object-fit: cover; /* Ensures the image covers the space without distortion */
+    }
+    
+    /* Styles for the caption text */
+    .team2024PicSection p {
+        font-size: 1rem; /* Adjust font size */
+        color: #ccc; /* Match caption text color to a lighter shade */
+        text-align: center; /* Center the text */
+        margin: 0; /* Remove extra margins */
+        max-width: 600px; /* Limit the text width to match the image */
+    }
+    
+/* Add any additional styling for the text or alignment if necessary */
 }
