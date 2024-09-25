@@ -754,8 +754,8 @@ h3 {
 }
 
 .scheduleBody {
-    width: 90vw;
-    height: 31.5vw;
+    width: 50vw;
+    height: auto;
     display: flex;
     gap: 2vw;
 }
@@ -763,7 +763,7 @@ h3 {
 .thiPromo {
     height: auto;
     width: 50vw;
-    background-image: url(../img/BlueCupSchedule.png);
+    background-image: url(../img/gpthandballgraphic.jpeg);
     background-size: cover;
 }
 
@@ -928,6 +928,7 @@ h3 {
         border-radius: 10px; /* Rounded corners */
         overflow: hidden; /* Ensure image respects border radius */
         object-fit: cover; /* Ensures the image covers the space without distortion */
+        flex-wrap: wrap;
     }
     
     /* Styles for the caption text */
@@ -939,5 +940,13 @@ h3 {
         max-width: 600px; /* Limit the text width to match the image */
     }
     
+    .gptgraphic {
+        width: 50%; /* Set image to take up the entire container width */
+        max-width: 600px; /* Limit the maximum width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Ensure image respects border radius */
+        object-fit: cover; /* Ensures the image covers the space without distortion */
+    }
 /* Add any additional styling for the text or alignment if necessary */
 }
