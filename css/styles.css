@@ -211,6 +211,11 @@ p {
     padding: 2vw;
 }
 
+.founding {
+    display: flex;
+    padding: 2vw;
+}
+
 #playerHighlightPicContainer {
     color: #ccc;
     font-size: .8rem;
