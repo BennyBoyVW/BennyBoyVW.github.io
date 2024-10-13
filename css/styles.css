@@ -953,5 +953,29 @@ h3 {
         overflow: hidden; /* Ensure image respects border radius */
         object-fit: cover; /* Ensures the image covers the space without distortion */
     }
-/* Add any additional styling for the text or alignment if necessary */
+}
+
+ /* Flex layout for larger screens */
+ .blueball-table-image-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.blueballers-image {
+    margin-left: 20px; /* Space between table and image */
+    max-width: 300 px;
+}
+
+/* Media query for mobile/small screens */
+@media (max-width: 768px) {
+    .blueball-table-image-container {
+        display: block; /* Stack table and image vertically */
+    }
+
+    .blueballers-image {
+        margin-left: 0;    /* Remove the left margin for mobile */
+        margin-top: 20px;  /* Add space above the image */
+        width: 100%;       /* Make image responsive (full width) */
+        max-width: 300px;  /* Optional: limit max width */
+    }
 }
